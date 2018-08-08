@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 68">
+    <defs>
+        <style>
+            .cls-1{fill:#0087ff}.cls-2,.cls-3{fill:#fff}.cls-2{font-size:12px;font-family:Helvetica-Bold,Helvetica;font-weight:700}.cls-4{filter:url(#Rectangle_3)}
+        </style>
+        <filter id="Rectangle_3" width="138" height="68" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#0087ff" flood-opacity=".349"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Telegram" transform="translate(70 -345)">
+        <g class="cls-4" transform="translate(-70 345)">
+            <rect id="Rectangle_3-2" width="120" height="50" class="cls-1" data-name="Rectangle 3" rx="25" transform="translate(9 6)"/>
+        </g>
+        <text id="Messenger" class="cls-2" transform="translate(-21 380)">
+            <tspan x="0" y="0">Messenger</tspan>
+        </text>
+        <g id="messenger-2" data-name="messenger" transform="translate(-45.83 368.386)">
+            <g id="Group_2" data-name="Group 2">
+                <path id="Path_1" d="M8.222 0C3.681 0 0 3.408 0 7.612a7.4 7.4 0 0 0 3.064 5.928v2.9l2.8-1.536a8.842 8.842 0 0 0 2.359.319c4.54 0 8.222-3.408 8.222-7.612S12.762 0 8.222 0zm.817 10.251L6.945 8.018 2.86 10.251l4.494-4.77L9.5 7.714l4.034-2.233z" class="cls-3" data-name="Path 1"/>
+            </g>
+        </g>
+    </g>
+</svg>

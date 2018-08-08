@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- <meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon"> -->
+	<!-- <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="../css/main.min.css">
+	<link rel="stylesheet" href="../libs/slick/slick.css">
+    <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+
+</head>
+
+<body>
+	<div class="body-10">
+		<div class="container">
+			<div class="description">
+				<h1>Find out</h1>
+				<div class="addition">
+					<p>
+						From bot which microphone 
+						is used by professional 
+						sound recording studios in 2018
+					</p>
+				</div>
+				<div class="slider__name">
+					<p><b>Star Name</b> used Soyuz Microphones</p>
+				</div>
+				<div class="slider_box">
+					<div class="slider">
+						<div class="slider-img">
+							<img src="../img/slider-1.png" alt="1">
+						</div>
+						<div class="slider-img">
+							<img src="../img/slider-3.png" alt="2">
+						</div>
+						<div class="slider-img">
+							<img src="../img/slider-2.png" alt="3">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="buttons__name">
+				<p>Find out</p>
+			</div>
+			<form action="https://t.me/SoyuzMicrophonesBot?start">
+				<button class="telegram" type="submit">
+					<!-- <img src="../img/telegram.svg" alt="Telegram"> -->
+					<!-- <span>Telegram</span>  -->
+				</button>
+			</form>
+			<form action="http://m.me/soyuzmicrophonestestbot">
+				<button class="messenger" type="submit">
+					<!-- <img src="../img/messenger.svg" alt="Messenger"> -->
+					<!-- <span>Messenger</span>  -->
+				</button>
+			</form>
+			<div class="logo">
+				<img src="../img/logo-gray.svg" alt="Логотип">
+			</div>
+		</div>
+	</div>	
+	<script src="js/scripts.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="../libs/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+	        centerMode: true,
+	        centerPadding: '60px',
+            slidesToShow: 1,
+            dots: true,
+			arrows: false, 
+            infinite: true
+        });
+    </script>
+
+</body>
+</html>

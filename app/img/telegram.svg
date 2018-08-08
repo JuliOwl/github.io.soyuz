@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 68">
+    <defs>
+        <style>
+            .cls-1{fill:#09a3e5}.cls-2,.cls-3{fill:#fff}.cls-2{font-size:12px;font-family:Helvetica-Bold,Helvetica;font-weight:700}.cls-4{filter:url(#Rectangle_3)}
+        </style>
+        <filter id="Rectangle_3" width="138" height="68" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#09a3e5" flood-opacity=".349"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Telegram" transform="translate(62 -345)">
+        <g class="cls-4" transform="translate(-62 345)">
+            <rect id="Rectangle_3-2" width="120" height="50" class="cls-1" data-name="Rectangle 3" rx="25" transform="translate(9 6)"/>
+        </g>
+        <text id="Telegram-2" class="cls-2" data-name="Telegram" transform="translate(-9 380)">
+            <tspan x="0" y="0">Telegram</tspan>
+        </text>
+        <g id="telegram-3" data-name="telegram" transform="translate(-32.84 350.374)">
+            <path id="XMLID_497_" d="M.277 25.946l3.613 1.348 1.4 4.5a.425.425 0 0 0 .675.2l2.014-1.642a.6.6 0 0 1 .732-.02l3.632 2.637a.426.426 0 0 0 .667-.257l2.661-12.8a.426.426 0 0 0-.57-.484L.273 25.149a.426.426 0 0 0 .004.797zm4.786.631l7.06-4.349a.123.123 0 0 1 .148.195l-5.826 5.416a1.208 1.208 0 0 0-.374.723l-.2 1.471a.182.182 0 0 1-.356.026l-.763-2.682a.711.711 0 0 1 .311-.8z" class="cls-3"/>
+        </g>
+    </g>
+</svg>

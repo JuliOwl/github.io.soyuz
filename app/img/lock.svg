@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 77.463 77.463">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #184cc4;
+        opacity: 0.396;
+      }
+
+      .cls-2 {
+        opacity: 0.203;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Path_3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.542" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#1b4198"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.136" y1="0.213" x2="0.839" y2="0.866" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1557ef"/>
+      <stop offset="1" stop-color="#1b4198"/>
+    </linearGradient>
+    <filter id="Path_3" x="13.8" y="13.915" width="48.227" height="55.748" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.376"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_49" data-name="Group 49" transform="translate(-121 -41)">
+    <g id="Ellipse_14" data-name="Ellipse 14" class="cls-1" transform="translate(121 41)">
+      <circle class="cls-5" cx="38.732" cy="38.732" r="38.732"/>
+      <circle class="cls-6" cx="38.732" cy="38.732" r="38.232"/>
+    </g>
+    <circle id="Ellipse_13" data-name="Ellipse 13" class="cls-2" cx="38.732" cy="38.732" r="38.732" transform="translate(121 41)"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-3" cx="30.732" cy="30.732" r="30.732" transform="translate(129 49)"/>
+    <g id="unblocked-padlock" transform="translate(149.8 66.915)">
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, -28.8, -25.92)">
+        <path id="Path_3-2" data-name="Path 3" class="cls-4" d="M82.256,11.066H81.88v-4.7a6.365,6.365,0,1,0-12.73,0v.36a1.736,1.736,0,1,0,3.472,0v-.36a2.893,2.893,0,0,1,5.786,0v4.7H68.774A2.372,2.372,0,0,0,66.4,13.439v9.937a2.372,2.372,0,0,0,2.372,2.372H82.256a2.372,2.372,0,0,0,2.372-2.372V13.439A2.372,2.372,0,0,0,82.256,11.066ZM76.817,18.6v1.724a1.3,1.3,0,0,1-2.6,0V18.6a2.242,2.242,0,1,1,2.6,0Z" transform="translate(-37.6 25.92)"/>
+      </g>
+    </g>
+  </g>
+</svg>

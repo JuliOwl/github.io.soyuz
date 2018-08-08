@@ -1,0 +1,1529 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+button 
+	border: 0
+	-webkit-appearance: none
+	// &[type="submit"]
+	// 	background: url('../img/telegram.svg') no-repeat center
+	// 	background-size: cover
+form 
+	display: inline
+.header
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 30px
+	margin-bottom: 123px
+	border-bottom: 1px solid  #f5f7fc
+	&__logo 
+		img
+			height: 77px
+.footer1
+	display: none
+.telegram
+	img 
+		margin-right: 0
+.messenger
+	img 
+		margin-right: 0
+.container
+	.content
+		display: grid 
+		grid-template-columns: repeat(12, 1fr)
+		.description 
+			grid-column: 1 / 7
+			padding-top: 100px
+			h1 
+				width: auto
+				height: 121px
+				font-family: "gotham-example"
+				font-size: 42px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.35
+				letter-spacing: normal
+				text-align: left
+				color: $text-color
+				margin-bottom: 33px
+				letter-spacing: -2px
+				.greentext 
+					color: #77bc3c
+			.question 
+				font-family: "gotham-example-bold"
+				font-size: 20px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 3.25
+				letter-spacing: normal
+				text-align: left
+				color: $text-color
+				margin-bottom: 38px
+				letter-spacing: -0.5px
+			.addition
+				width: 604px
+				font-family: "gotham-example"
+				font-size: 14px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.71
+				letter-spacing: normal
+				text-align: left
+				color: #9097a8
+				margin-bottom: 70px
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.buttons
+				.telegram 
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					background-color: #09a3e5	
+					outline: none
+					margin-right: 30px
+					&[type="submit"]
+						background: url('../img/telegramD.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					outline: none
+					&[type="submit"]
+						background: url('../img/messengerD.svg') no-repeat center
+						background-size: cover
+		.image
+			text-align: right
+			grid-column: 8 / 13
+			.mic
+				margin-top: 10px
+				height: 556px
+			.buy
+				font-family: "gotham-example"
+				letter-spacing: -1px
+				font-size: 20px
+				font-weight: bold
+				text-align: left
+				color: #d05059
+				position: absolute
+				top: 300px
+				margin-left: 100px
+				span 
+					text-align: right
+					font-size: 14px
+					font-weight: 500
+					color: #adb2bf
+			.sell
+				font-family: "gotham-example"
+				font-size: 20px
+				letter-spacing: -1px
+				font-weight: bold
+				text-align: center
+				color: #ffffff
+				position: absolute
+				top: 460px
+				margin-left: 380px
+				span 
+					opacity: 0.5
+					font-size: 14px
+					font-weight: 500
+
+.container_2
+	.content_2
+		margin-top: 155px
+		.description
+			text-align: center
+			h1 
+				width: 670px
+				height: 121px
+				font-family: "gotham-example-light"
+				font-size: 45px
+				font-weight: 300
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.35
+				letter-spacing: normal
+				text-align: left
+				color: $text-color
+				text-align: center
+				//letter-spacing: -2px
+				margin: 0 20% 40px 20%
+			.question 
+				font-family: "gotham-example-bold"
+				font-size: 20px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 3.25
+				letter-spacing: normal
+				text-align: left
+				color: $text-color
+				margin-bottom: 38px
+				text-align: center
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				font-size: 14px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.71
+				letter-spacing: normal
+				text-align: left
+				color: #9097a8
+				text-align: center
+				margin-bottom: 70px
+				padding: 0 270px
+				letter-spacing: -1px
+				p 
+					width: 100%
+			.buttons
+				margin-bottom: 81px
+				.telegram 
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					background-color: #09a3e5	
+					outline: none
+					margin-right: 30px
+					&[type="submit"]
+						background: url('../img/telegramD.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					outline: none
+					&[type="submit"]
+						background: url('../img/messengerD.svg') no-repeat center
+						background-size: cover
+		
+		.image
+			text-align: center
+			margin-bottom: 12px
+			.mic
+				height: 380px
+			.price 
+				height: 56px
+				&_1
+					position: relative
+				&_2
+					position: relative
+					margin-top: 180px
+			.sell
+				font-family: "gotham-example"
+				color: #ffffff
+				font-weight: bold
+				font-size: 16px
+				position: absolute
+				top: 405px
+				right: calc(50% - 200px)
+			.buy
+				font-family: "gotham-example"
+				color: #ffffff
+				font-weight: bold
+				font-size: 16px
+				position: absolute
+				top: 315px
+				left: calc(50% - 200px)
+.body-3
+	.container
+		.content
+			display: grid 
+			grid-template-columns: repeat(12, 1fr)
+			.description 
+				grid-column: 1 / 7
+				padding-top: 100px
+				h1 
+					width: auto
+					height: 121px
+					font-family: "gotham-example-bold"
+					font-size: 42px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.35
+					letter-spacing: normal
+					text-align: left
+					color: $text-color
+					margin-bottom: 33px
+					letter-spacing: -2px
+					.greentext 
+						color: #77bc3c
+				.question 
+					font-family: "gotham-example"
+					font-size: 20px
+					font-weight: 500
+					font-style: normal
+					font-stretch: normal
+					line-height: 3.25
+					letter-spacing: normal
+					text-align: left
+					color: $text-color
+					margin-bottom: 38px
+					letter-spacing: -1px
+				.addition
+					width: 604px
+					font-family: "gotham-example"
+					font-size: 14px
+					font-weight: normal
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.71
+					letter-spacing: normal
+					text-align: left
+					color: #9097a8
+					margin-bottom: 70px
+					letter-spacing: -0.5px
+					p 
+						width: 100%
+				.buttons
+					margin-bottom: 20px
+					.telegram 
+						width: 160px
+						height: 50px
+						border-radius: 25px
+						background-color: #09a3e5	
+						outline: none
+						margin-right: 30px
+						&[type="submit"]
+							background: url('../img/telegramD.svg') no-repeat center
+							background-size: cover
+
+					.messenger
+						background-color: #0087ff
+						width: 160px
+						height: 50px
+						border-radius: 25px
+						outline: none
+						&[type="submit"]
+							background: url('../img/messengerD.svg') no-repeat center
+							background-size: cover
+			.prices
+				grid-column: 8 / 11
+				text-align: right
+				.price 
+					height: 82px
+					margin-top: 228px
+					&_1
+						position: relative
+					&_2
+						position: relative
+						margin-top: 20px
+				.buy
+					font-family: "gotham-example"
+					letter-spacing: -1px
+					font-size: 20px
+					font-weight: bold
+					text-align: center
+					color: #d05059
+					position: absolute
+					top: 475px
+					right: calc(50% - 350px)
+					span 
+						font-size: 14px
+						font-weight: 500
+						color: #adb2bf
+				.sell
+					font-family: "gotham-example"
+					font-size: 20px
+					letter-spacing: -1px
+					font-weight: bold
+					text-align: center
+					color: #ffffff
+					position: absolute
+					top: 575px
+					right: calc(50% - 350px)
+					span 
+						opacity: 0.5
+						font-size: 14px
+						font-weight: 500
+			.image
+				text-align: left
+				grid-column: 11 / 13
+				img
+					height: 558px
+
+.container_4
+	.content_4
+		.description
+			text-align: center
+			h1 
+				//width: 670px
+				//height: 121px
+				font-family: "gotham-example-light"
+				font-size: 48px
+				font-weight: 200
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.35
+				letter-spacing: normal
+				color: $text-color
+				text-align: center
+				margin: 0 auto 40px auto
+				letter-spacing: -2px
+			.question 
+				font-family: "gotham-example-bold"
+				font-size: 20px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 3.25
+				letter-spacing: normal
+				text-align: left
+				color: $text-color
+				margin-bottom: 38px
+				text-align: center
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				font-size: 14px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.71
+				letter-spacing: normal
+				text-align: left
+				color: #9097a8
+				text-align: center
+				margin-bottom: 70px
+				//padding: 0 630px
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.buttons
+				margin-bottom: 81px
+				.telegram 
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					background-color: #09a3e5	
+					outline: none
+					margin-right: 30px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegramD.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					outline: none
+					border: 0
+					&[type="submit"]
+						background: url('../img/messengerD.svg') no-repeat center
+						background-size: cover
+		
+		.image-4
+			text-align: center
+			margin-bottom: 81px
+			background: url(../img/bgc-4.png) no-repeat center 
+			background-size: cover
+			width: 100%
+			height: 540px
+			.mic
+				margin-top: 100px
+				height: 380px
+			.price 
+				height: 56px
+				&_1
+					position: relative
+					margin-top: 120px
+				&_2
+					position: relative
+					margin-top: 270px
+			.sell
+				font-family: "gotham-example"
+				color: #ffffff
+				font-weight: bold
+				font-size: 16px
+				position: absolute
+				top: 345px
+				right: calc(50% - 195px)
+			.buy
+				font-family: "gotham-example"
+				color: #ffffff
+				font-weight: bold
+				font-size: 16px
+				position: absolute
+				top: 270px
+				left: calc(50% - 190px)
+
+.body-5 
+	background: url(../img/bgc-5.png) no-repeat center
+	background-size: cover
+	width: 100%
+	min-height: 100%
+	min-height: 100vh
+	background-color: #242329
+
+.header-5
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 30px
+	margin-bottom: 120px
+	border-bottom: 1px solid rgba(#f5f7fc, 0.07)
+
+	&__logo 
+		img
+			height: 77px
+.foot-5
+	display: none
+
+.container
+	.content-5
+		display: grid 
+		grid-template-columns: repeat(12, 1fr)
+		.description 
+			grid-column: 1 / 7
+			padding-top: 50px
+			h1 
+				width: 670px
+				height: 121px
+				font-family: "gotham-example-light"
+				font-size: 48px
+				font-weight: 300
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.35
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				margin-bottom: 40px
+				letter-spacing: -2px
+			.question 
+				font-family: "gotham-example-bold"
+				font-size: 20px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				font-weight: bold
+				line-height: 3.25
+				letter-spacing: normal
+				text-align: left
+				color: #77bc3c
+				margin-bottom: 38px
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				font-size: 14px
+				opacity: 0.8
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.71
+				letter-spacing: normal
+				text-align: left
+				color: #afb5c3
+				margin-bottom: 70px
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.buttons
+				margin-bottom: 20px
+				.telegram 
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 30px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegramD.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					border: 1px transparent
+					outline: none
+					border: 0
+					&[type="submit"]
+						background: url('../img/messengerD.svg') no-repeat center
+						background-size: cover
+
+		.prices
+			grid-column: 8 / 11
+			text-align: right
+			.price 
+				height: 82px
+				margin-top: 228px
+				&_1
+					position: relative
+				&_2
+					position: relative
+					margin-top: 20px
+			.buy
+				font-family: "gotham-example"
+				letter-spacing: -1px
+				font-size: 20px
+				font-weight: bold
+				text-align: center
+				color: #d05059
+				position: absolute
+				top: 470px
+				right: calc(50% - 350px)
+				span 
+					font-size: 14px
+					font-weight: 500
+					color: #adb2bf
+			.sell
+				font-family: "gotham-example"
+				font-size: 20px
+				letter-spacing: -1px
+				font-weight: bold
+				text-align: center
+				color: #ffffff
+				position: absolute
+				top: 570px
+				right: calc(50% - 350px)
+				span 
+					opacity: 0.5
+					font-size: 14px
+					font-weight: 500
+		.image
+			text-align: left
+			grid-column: 11 / 13
+			img
+				height: 558px
+
+.body-6 
+	background: url(../img/bgc-6.png) no-repeat center
+	background-size: cover
+	width: 100%
+	min-height: 100vh
+	background-color: #242329
+	.footer 
+		position: fixed
+		bottom: 0px
+		opacity: 0.7
+		font-family: "gotham-example-bold"
+		font-size: 143px
+		font-weight: bold
+		font-style: normal
+		font-stretch: normal
+		letter-spacing: normal
+		text-align: left
+		color: #000000
+
+.container
+	.content-6
+		display: grid 
+		grid-template-columns: repeat(12, 1fr)
+		.description 
+			grid-column: 6 / 13
+			padding-top: 10px
+			h1 
+				font-family: "gotham-example-light"
+				font-size: 42px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.35
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				margin-bottom: 40px
+				letter-spacing: -2px
+			.question 
+				font-family: "gotham-example-bold"
+				font-size: 20px
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				font-weight: bold
+				line-height: 3.25
+				letter-spacing: normal
+				text-align: left
+				color: #77bc3c
+				margin-bottom: 38px
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				font-size: 14px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.71
+				letter-spacing: normal
+				text-align: left
+				color: #9097a8
+				margin-bottom: 70px
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.buttons
+				position: relative
+				z-index: 10
+				.telegram 
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 30px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegramD.svg') no-repeat center
+						background-size: cover
+				.messenger
+					background-color: #0087ff
+					width: 160px
+					height: 50px
+					border-radius: 25px
+					border: 1px transparent
+					outline: none
+					border: 0
+					&[type="submit"]
+						background: url('../img/messengerD.svg') no-repeat center
+						background-size: cover
+
+		.prices
+			grid-column: 1 / 2
+			text-align: right
+			.price 
+				height: 82px
+				margin-top: 180px
+				&_1
+					position: relative
+				&_2
+					position: relative
+					margin-top: 10px
+			.buy
+				font-family: "gotham-example"
+				letter-spacing: -1px
+				font-size: 20px
+				font-weight: bold
+				text-align: center
+				color: #d05059
+				position: absolute
+				top: 425px
+				left: calc(50% - 530px)
+				span 
+					font-size: 14px
+					font-weight: 500
+					color: #adb2bf
+			.sell
+				font-family: "gotham-example"
+				font-size: 20px
+				letter-spacing: -1px
+				font-weight: bold
+				text-align: center
+				color: #ffffff
+				position: absolute
+				top: 515px
+				left: calc(50% - 530px)
+				span 
+					opacity: 0.5
+					font-size: 14px
+					font-weight: 500
+		.image
+			text-align: left
+			grid-column: 2 / 6
+			img
+				height: 452px
+
+.body-7 
+	background: url(../img/bgc-7.png) no-repeat center
+	background-size: cover
+	width: 100%
+	min-height: 100%
+	min-height: 100vh
+	.container
+		.content
+			display: grid 
+			grid-template-columns: repeat(12, 1fr)
+			padding-top: 190px
+			.description 
+				grid-column: 1 / 7
+				.logo	
+					img
+						height: 55px
+				h1 
+					font-family: "gotham-example-bold"
+					color: #ffffff
+					letter-spacing: -1px
+					.greentext
+						color: #77bc3c
+
+				.question 
+					font-family: "gotham-example-light"
+					letter-spacing: -1.5px
+					font-weight: normal
+					color: #ffffff
+				.addition 
+					font-family: "gotham-example-light"
+					letter-spacing: -0.5px
+				.buttons
+					//margin-bottom: 140px
+					.telegram 
+						border: 1px transparent
+						&[type="submit"]
+							background: url('../img/telegramD.svg') no-repeat center
+							background-size: cover
+					.messenger
+						border: 1px transparent
+						&[type="submit"]
+							background: url('../img/messengerD.svg') no-repeat center
+							background-size: cover
+			.image
+				text-align: right
+				grid-column: 8 / 13
+				.mic
+					margin-top: 80px
+					height: 556px
+				.buy
+					font-family: "gotham-example"
+					letter-spacing: -1px
+					font-size: 20px
+					font-weight: bold
+					text-align: left
+					color: #d05059
+					position: absolute
+					top: 310px
+					margin-left: 30px
+					span 
+						text-align: right
+						font-size: 14px
+						font-weight: 500
+						color: #adb2bf
+				.sell
+					font-family: "gotham-example"
+					font-size: 18px
+					letter-spacing: -1px
+					font-weight: bold
+					text-align: center
+					color: #ffffff
+					position: absolute
+					top: 610px
+					margin-left: 370px
+					span 
+						opacity: 0.5
+						font-size: 14px
+						font-weight: 500
+
+.body-8 
+	background: url(../img/bgc-8.png) no-repeat center
+	background-size: cover
+	width: 100%
+	min-height: 100%
+	min-height: 100vh
+	display: grid 
+	grid-template-columns: repeat(12, 1fr)
+		
+	.container
+		.content
+			padding-top: 190px
+			.description 
+				grid-column: 7 / 13
+				.logo	
+					img
+						height: 55px
+				h1 
+					font-family: "gotham-example-bold"
+					height: auto
+					color: $text-color
+					font-weight: bold
+					font-size: 48px
+					.greentext
+						color: #77bc3c
+
+				.question 
+					font-family: "gotham-example"
+					font-weight: 500
+					color: $text-color
+					letter-spacing: -1px
+				.buttons
+					//margin-bottom: 180px
+					.telegram 
+						border: 1px transparent
+						&[type="submit"]
+							background: url('../img/telegramD.svg') no-repeat center
+							background-size: cover
+					.messenger
+						border: 1px transparent
+						&[type="submit"]
+							background: url('../img/messengerD.svg') no-repeat center
+							background-size: cover
+	.image
+		text-align: center
+		margin-bottom: 12px
+		grid-column: 3 / 6
+		.mic
+			margin-top: 220px
+			height: 560px
+		.price 
+			height: 130px
+			&_2
+				position: relative
+				margin-top: -350px
+				margin-left: 260px
+		.buy
+			font-family: "gotham-example"
+			letter-spacing: -1px
+			font-size: 20px
+			font-weight: bold
+			text-align: left
+			color: #d05059
+			position: absolute
+			top: 300px
+			margin-left: 30px
+			span 
+				text-align: right
+				font-size: 14px
+				font-weight: 500
+				color: #adb2bf
+		.sell
+			font-family: "gotham-example"
+			font-size: 18px
+			letter-spacing: -1px
+			font-weight: bold
+			text-align: center
+			color: #ffffff
+			position: absolute
+			top: 580px
+			margin-left: 320px
+			span 
+				opacity: 0.5
+				font-size: 14px
+				font-weight: 500
+
+.body-9 
+	background: url(../img/bgc-9.png) no-repeat center
+	background-size: cover
+	width: 100%
+	height: 100%
+	.container
+		.description 
+			text-align: center
+			padding-top: 60px
+			h1 
+				font-family: "gotham-example-light"
+				font-size: 28px
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				padding-left: 10px
+				margin-bottom: 20px
+				span 
+					font-family: "gotham-example"
+					font-weight: bold
+			.addition
+				font-family: "gotham-example"
+				opacity: 0.8
+				font-size: 12px
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.67
+				letter-spacing: normal
+				text-align: left
+				color: #afb5c3
+				//margin-bottom: 72%
+				padding-left: 10px
+				p 
+					width: 100%
+			
+			.buttons
+				position: absolute
+				margin-left: auto
+				margin-right: auto
+				left: 0
+				right: 0
+				//padding-bottom: 10px
+				bottom: 20px
+				&__name
+					font-family: "gotham-example"
+					font-size: 20px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					letter-spacing: normal
+					text-align: center
+					color: #ffffff
+					//margin-bottom:20px
+				.image
+					margin-top: 10px
+					img 
+						width: 27px	
+				.telegram 
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 10px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegram.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					border: 1px transparent
+					outline: none
+					&[type="submit"]
+						background: url('../img/messenger.svg') no-repeat center
+						background-size: cover
+.body-10
+	.container
+		overflow: hidden
+		.description 
+			text-align: center
+			padding-top: 30px
+			h1 
+				font-family: "gotham-example-bold"
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				letter-spacing: normal
+				text-align: left
+				padding-left: 5px
+				font-weight: bold
+				font-size: 31px
+  				color: #162334
+				margin-bottom: 10px
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				opacity: 0.8
+				font-size: 12px
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.67
+				letter-spacing: normal
+				text-align: left
+				padding-left: 5px
+				margin-bottom: 40px
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.slider__name
+				font-family: "gotham-example"
+				opacity: 0.8
+				font-size: 12px
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				letter-spacing: normal
+				text-align: left
+				letter-spacing: -0.3px
+				p 
+					text-align: center
+
+			.slider
+				margin-left: -40px
+				margin-right: -40px
+				.slick-slide
+					img 
+						transform: scale(0.9)
+						transition: all 300ms ease
+						opacity: .8
+						height: 184px
+					border-radius: 15px
+					&.slick-center
+						img
+							transition: all 300ms ease
+							opacity: 1
+							transform: scale(1)
+				
+
+	.slick-dots li 
+		margin: 0
+		&.slick-active button:before
+			font-size: 15px
+			transition: font-size .3s
+	.buttons
+		position: absolute 
+		background-color: #162334
+		text-align: center
+		width: 100%
+		hight: 100%
+		bottom: 0
+		&__name
+			font-family: "gotham-example"
+			font-size: 20px
+			font-weight: bold
+			font-style: normal
+			font-stretch: normal
+			letter-spacing: normal
+			text-align: center
+			color: #ffffff
+			//margin-bottom: 20px
+			//padding-top: 10px
+		.telegram 
+			width: 120px
+			height: 48px
+			border-radius: 25px
+			background-color: #09a3e5	
+			border: 1px transparent
+			outline: none
+			margin-right: 10px
+			border: 0
+			&[type="submit"]
+				background: url('../img/telegram.svg') no-repeat center
+				background-size: cover
+
+		.messenger
+			background-color: #0087ff
+			width: 120px
+			height: 48px
+			border-radius: 25px
+			border: 1px transparent
+			outline: none
+			&[type="submit"]
+				background: url('../img/messenger.svg') no-repeat center
+				background-size: cover
+		.logo 
+			margin-top: 10px
+			padding-bottom: 10px
+			img 
+				width: 27px
+
+.body-11
+	background: url(../img/bgc-11.png) no-repeat center
+	background-size: cover
+	width: 100%
+	height: 100%
+
+	.container
+		.description 
+			text-align: center
+			padding-top: 40px
+			h1 
+				font-family: "gotham-example-bold"
+				font-size: 30px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				padding-left: 10px
+				margin-bottom: 20px
+			.addition
+				font-family: "gotham-example"
+				opacity: 0.8
+				font-size: 12px
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.67
+				letter-spacing: normal
+				text-align: left
+				color: #8c95a7
+				padding-left: 10px
+				margin-bottom: 10%
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.img 
+				padding: 0 10px
+				
+				img 
+					border-radius: 10px
+  					box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.54)
+					width: 100%
+			
+			.buttons
+				position: absolute
+				margin-left: auto
+				margin-right: auto
+				left: 0
+				right: 0
+				padding-bottom: 10px
+				bottom: 5px
+				&__name
+					font-family: "gotham-example"
+					font-size: 20px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					letter-spacing: normal
+					text-align: center
+					color: #ffffff
+					margin-bottom: 10px
+				.telegram 
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 10px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegram.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					border: 1px transparent
+					outline: none
+					&[type="submit"]
+						background: url('../img/messenger.svg') no-repeat center
+						background-size: cover
+
+				.logo 
+					margin-top: 10px
+					img 
+						width: 27px	
+
+.body-12
+	background: url(../img/bgc-12.png) no-repeat center
+	background-size: cover
+	width: 100%
+	height: 100%
+
+	.container
+		.description 
+			text-align: center
+			padding-top: 70%
+			h1 
+				text-align: center
+				font-family: "gotham-example"
+				font-size: 30px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				color: #ffffff
+				padding-left: 0px
+				margin-bottom: 20px
+			.addition
+				font-family: "gotham-example-light"
+				font-size: 14px
+				font-weight: 300
+				opacity: 0.8
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.67
+				letter-spacing: normal
+				text-align: center
+				color: #ffffff
+				padding-left: 0px
+				margin-bottom: 10%
+				letter-spacing: -0.2px
+				p 
+					width: 100%
+			
+			.buttons
+				position: absolute
+				margin-left: auto
+				margin-right: auto
+				left: 0
+				right: 0
+				padding-bottom: 10px
+				bottom: 10px
+				.block
+					font-family: "gotham-example"
+					font-size: 12px
+					font-weight: 500
+					font-style: normal
+					opacity: 0.7
+					font-stretch: normal
+					line-height: 1.67
+					letter-spacing: normal
+					text-align: center
+					color: #ffffff
+					//padding-left: 20px
+					//margin-bottom: 10%
+					margin-bottom: 35px
+				.telegram 
+					width: 120px
+					height: 50px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 10px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegram.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					border: 1px transparent
+					outline: none
+					&[type="submit"]
+						background: url('../img/messenger.svg') no-repeat center
+						background-size: cover	
+
+				.logo 
+					margin-top: 40px
+					img 
+						width: 27px	
+
+.body-13
+	background: url(../img/bgc-13.png) no-repeat center
+	background-size: cover
+	background-color: #000613
+	width: 100%
+	height: 100%
+	.container
+		.description 
+			text-align: center
+			padding-top: 20px
+			.lock
+				img
+					height: 78px
+			h1 
+				text-align: center
+				font-family: "gotham-example"
+				font-size: 24px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				letter-spacing: normal
+				color: #ffffff
+				margin-bottom: 20px
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				font-size: 14px
+				font-weight: 300
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.67
+				letter-spacing: normal
+				text-align: center
+				color: #ffffff
+				margin-bottom: 15px
+				padding: 0 15px
+				letter-spacing: -0.5px
+				p 
+					width: 100%
+			.addition_span
+				font-family: "gotham-example"
+				font-size: 12px
+				opacity: 0.3
+				font-weight: normal
+				font-style: normal
+				font-stretch: normal
+				letter-spacing: normal
+				text-align: center
+				color: #ffffff
+				letter-spacing: -0.5px
+				margin-bottom: 15px
+				p 
+					width: 100%
+			.sound 
+				img 
+					height: 51px
+			.block
+				font-family: "gotham-example"
+				font-size: 14px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				letter-spacing: normal
+				text-align: center
+				color: #ffffff
+				margin-top: 5px
+				margin-bottom: 10px
+			.buttons
+				.telegram 
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 10px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegram.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					//box-shadow: 0 3px 3px 0 rgba(0, 135, 255, 0.35)
+					border: 1px transparent
+					outline: none
+					&[type="submit"]
+						background: url('../img/messenger.svg') no-repeat center
+						background-size: cover
+						
+			.logo 
+				margin-top: 5px
+				img 
+					width: 30px	
+
+.body-14 
+	background: url(../img/bgc-14.png) no-repeat center
+	background-size: cover
+	width: 100%
+	height: 100%
+
+	.container
+		.description 
+			text-align: center
+			padding-top: 62px
+			h1 
+				font-family: "gotham-example"
+				font-size: 28px
+				font-weight: bold
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.43
+				letter-spacing: normal
+				text-align: left
+				color: #ffffff
+				padding-left: 10px
+				margin-right: 20px
+				margin-bottom: 50px
+				letter-spacing: -0.5px
+			.addition
+				font-family: "gotham-example"
+				opacity: 0.8
+				font-size: 12px
+				font-weight: 500
+				font-style: normal
+				font-stretch: normal
+				line-height: 1.67
+				letter-spacing: normal
+				text-align: center
+				color: #afb5c3
+				p 
+					width: 100%
+			
+			.buttons
+				position: absolute
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 0
+				top: 60%
+				left: 0
+				right: 0
+				bottom: 0
+				&__name
+					font-family: "gotham-example"
+					font-size: 20px
+					font-weight: bold
+					font-style: normal
+					font-stretch: normal
+					letter-spacing: normal
+					text-align: center
+					color: #ffffff
+					margin-bottom: 20px
+				.telegram 
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					background-color: #09a3e5	
+					border: 1px transparent
+					outline: none
+					margin-right: 10px
+					border: 0
+					&[type="submit"]
+						background: url('../img/telegram.svg') no-repeat center
+						background-size: cover
+
+				.messenger
+					background-color: #0087ff
+					width: 120px
+					height: 48px
+					border-radius: 25px
+					border: 1px transparent
+					outline: none
+					&[type="submit"]
+						background: url('../img/messenger.svg') no-repeat center
+						background-size: cover
+			
+				.logo 
+					margin-top: 15%
+					img 
+						width: 27px	
+
+@import "media" // Всегда в конце
